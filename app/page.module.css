@@ -48,6 +48,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3em;
   padding: 0 4em;
 }
 
@@ -74,4 +75,10 @@
   }
 
 
+}
+
+@media(min-width: 768px){
+  .container{
+    gap: 2em;
+  }
 }

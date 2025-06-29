@@ -59,7 +59,7 @@
   width: 50px;
   cursor: pointer;
   background: none;
-  margin-top: 1.5em;
+  
 }
 
 
@@ -68,7 +68,7 @@
   .nav {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     padding: 1em 4em;
   }
@@ -80,6 +80,10 @@
     align-items: flex-start;
     gap: 2em;
   }
+  .image{
+    margin-top: 1.5em;
+  }
  
 
 }
+
