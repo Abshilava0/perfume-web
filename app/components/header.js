@@ -40,8 +40,7 @@ export default function Header() {
         </li>
       </ul>
       <div className={classes.image}>
-        <Image src="/dior.jpg" fill alt="Image" />
-
+        <Link href="/fragrance"><Image src="/dior.jpg" fill alt="Image" /></Link>
       </div>
     </nav>
   );

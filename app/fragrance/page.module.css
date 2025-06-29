@@ -69,3 +69,7 @@
   border: 1.5px solid rgb(0, 8, 93);
 }
 
+.card button:active{
+  background-color: rgba(49, 66, 255, 0.635);
+  border: 1.5px solid rgba(49, 66, 255, 0.635);
+}
