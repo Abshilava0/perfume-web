@@ -1,0 +1,58 @@
+.shiny-text {
+  color: #b5b5b5a4; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    white 40%,
+    rgb(20, 39, 255) 50%,
+    white 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+  font-size: 3.2em;
+}
+
+.custom-class-second{
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+
+.custom-class-third{
+  font-size: 1em;
+  line-height: 1.5em;
+  
+}
+
+.custom-class-card-h1{
+  font-size: 3em;
+  margin-top: 0.4em;
+}
+
+.custom-class-card-desc{
+  margin-top: 0.6em;
+  font-size: 1em;
+}
+
+.custom-class-card-price{
+  font-size: 1em;
+}
+
+.custom-class-card-button{
+  font-size: 1em;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}

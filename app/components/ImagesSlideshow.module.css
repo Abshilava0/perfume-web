@@ -1,0 +1,49 @@
+.slideshow {
+   position: relative;
+  width: 100%;
+  min-width: 250px;
+  max-width: 600px;
+  height: 700px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideshow :global(img), /* For Next.js Image component */
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(1.1) translateX(-1rem) rotate(-5deg);
+  transition: all 0.5s ease-in-out;
+  object-fit: cover;
+}
+
+.slideshow .active {
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1) translateX(0) rotate(0);
+}
+
+@media (max-width: 900px) {
+  .slideshow {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slideshow {
+    width: 100%;
+    
+    height: 500px;
+    margin: 0 auto;
+  }
+}
