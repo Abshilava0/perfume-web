@@ -59,7 +59,24 @@
   width: 50px;
   cursor: pointer;
   background: none;
-  
+  margin-right: 2em;
+}
+
+.cartIcon {
+  font-size: 2em;
+  margin-left: 2em;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  transition: transform 0.2s;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+.cartIcon:hover,
+.cartIcon:focus {
+  transform: scale(1.1);
+  color: #00d4ff;
 }
 
 

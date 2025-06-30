@@ -55,7 +55,7 @@
 .card button{
   font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", "Georgia", serif;
   padding: 0.8em 1.2em;
-  margin-top: 1.8em;
+  margin-top: 1.3em;
   font-size: 1em;
   background: transparent;
   border: 1.5px solid white;
@@ -73,3 +73,13 @@
   background-color: rgba(49, 66, 255, 0.635);
   border: 1.5px solid rgba(49, 66, 255, 0.635);
 }
+
+
+.cart {
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -0.3em;
+  margin-left: -1.5em;
+}
+

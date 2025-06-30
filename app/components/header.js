@@ -5,15 +5,15 @@ import classes from "./header.module.css";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-
-
 export default function Header() {
   const path = usePathname();
 
   return (
     <nav className={classes.nav}>
       <div className={classes.info}>
-        <h1><Link href="/">DIOR</Link></h1>
+        <h1>
+          <Link href="/">DIOR</Link>
+        </h1>
       </div>
       <ul>
         <li>
@@ -40,7 +40,9 @@ export default function Header() {
         </li>
       </ul>
       <div className={classes.image}>
-        <Link href="/fragrance"><Image src="/dior.jpg" fill alt="Image" /></Link>
+        <Link href="/fragrance">
+          <Image src="/dior.jpg" fill alt="Image" />
+        </Link>
       </div>
     </nav>
   );
