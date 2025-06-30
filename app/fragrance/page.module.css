@@ -80,8 +80,8 @@
   cursor: pointer;
 
   position: fixed;
-  
-  right: 1em;
+  margin-top: 0.14em;
+  margin-left: -1.5em;
   z-index: 1000;
 }
 

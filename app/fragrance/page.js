@@ -55,9 +55,8 @@ export default function Fragrance() {
     <span className={classes.cart} onClick={() => setCartOpen(!cartOpen)}>
       <Image
         src="/cart.png"
-        width={50}
-        height={50}
-        style={{ borderRadius: "50%", backgroundColor: "white" }}
+        width={40}
+        height={40}
       />
       {cart.length > 0 && (
         <span
