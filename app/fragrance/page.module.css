@@ -78,8 +78,10 @@
 .cart {
   font-size: 2em;
   cursor: pointer;
-  position: absolute;
-  margin-top: -0.3em;
-  margin-left: -1.5em;
+
+  position: fixed;
+  
+  right: 1em;
+  z-index: 1000;
 }
 

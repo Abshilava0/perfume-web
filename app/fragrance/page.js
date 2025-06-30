@@ -52,11 +52,13 @@ export default function Fragrance() {
 
   // Cart icon (you can use an SVG or emoji)
   const CartIcon = (
-    <span
-      className={classes.cart}
-      onClick={() => setCartOpen(!cartOpen)}
-    >
-      🛒
+    <span className={classes.cart} onClick={() => setCartOpen(!cartOpen)}>
+      <Image
+        src="/cart.png"
+        width={50}
+        height={50}
+        style={{ borderRadius: "50%", backgroundColor: "white" }}
+      />
       {cart.length > 0 && (
         <span
           style={{
@@ -78,14 +80,14 @@ export default function Fragrance() {
 
   return (
     <div className={classes.container}>
-      <div style={{ position: "fixed", top: 30, right: 40, zIndex: 1000 }}>
+      <div style={{ position: "fixed", top: 16, right: 40, zIndex: 1000 }}>
         {CartIcon}
       </div>
       {cartOpen && (
         <div
           style={{
             position: "fixed",
-            top: 70,
+            top: 90,
             right: 40,
             background: "#222",
             color: "white",
